@@ -3,9 +3,7 @@ import { NgModule } from '@angular/core';
 import { Route, Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 
-const fallbackRoute: Route = {
-  path: '**', redirectTo: '/', pathMatch: 'full'
-};
+import { fallbackRoute } from './shared/fallback-route';
 
 const routes: Routes = [
   { path: '', redirectTo: '/layout', pathMatch: 'full' },
