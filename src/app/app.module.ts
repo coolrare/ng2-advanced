@@ -7,12 +7,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardsComponent } from './cards/cards.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FlotComponent } from './charts/flot/flot.component';
+import { RadialComponent } from './charts/radial/radial.component';
+import { RickshawComponent } from './charts/rickshaw/rickshaw.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsComponent,
-    DashboardComponent
+    DashboardComponent,
+    FlotComponent,
+    RadialComponent,
+    RickshawComponent
   ],
   imports: [
     BrowserModule,
