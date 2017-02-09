@@ -6,10 +6,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { fallbackRoute } from './shared/fallback-route';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/layout', pathMatch: 'full' },
-  { path: 'layout', component: LayoutComponent },
-  { path: 'page2', component: Page2Component },
-  fallbackRoute
+  {
+    path: '',
+    children: []
+  }
 ];
 
 @NgModule({
