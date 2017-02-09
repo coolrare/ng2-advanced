@@ -1,15 +1,14 @@
-import { Page2Component } from './page2/page2.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CardsComponent } from './cards/cards.component';
 import { NgModule } from '@angular/core';
 import { Route, Routes, RouterModule } from '@angular/router';
-import { LayoutComponent } from './layout/layout.component';
 
 import { fallbackRoute } from './shared/fallback-route';
 
 const routes: Routes = [
-  {
-    path: '',
-    children: []
-  }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'cards', component: CardsComponent },
+  fallbackRoute
 ];
 
 @NgModule({
