@@ -9,10 +9,12 @@ import { fallbackRoute } from './shared/fallback-route';
 
 import { LoginComponent } from './login/login.component';
 import { LoginRouteGuard } from './login-route-guard';
+import { EnsureLoginGuard } from './ensure-login-guard';
 
 const routes: Routes = [
   {
-    path: 'login', component: LoginComponent
+    path: 'login', component: LoginComponent,
+    canDeactivate: [EnsureLoginGuard]
   },
   { path: '', component: LayoutComponent,
     children: [

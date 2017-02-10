@@ -11,6 +11,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 
 import { LoginRouteGuard } from './login-route-guard';
+import { EnsureLoginGuard } from './ensure-login-guard';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { LoginRouteGuard } from './login-route-guard';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [LoginRouteGuard],
+  providers: [LoginRouteGuard, EnsureLoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
