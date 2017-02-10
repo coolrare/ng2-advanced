@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { CardsComponent } from './cards/cards.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { ChartsModule } from './charts/charts.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +20,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    ChartsModule,
     AppRoutingModule
   ],
   providers: [],
