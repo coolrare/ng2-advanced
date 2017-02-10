@@ -10,6 +10,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 
+import { LoginRouteGuard } from './login-route-guard';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { LoginComponent } from './login/login.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [LoginRouteGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
